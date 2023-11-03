@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    /* margin: 0; */
+}
+
+.page {
+    min-height: 100vh;
+    position: relative;
+    background-color: #009cda;
+    text-align: center;
+    padding: 0rem 5rem;
+}
+
+.page:not(:first-child) {
+    padding-top: 14rem;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.page h1 {
+    font-family: sans-serif;
+    font-size: 5rem;
+    margin: 0;
+    margin-bottom: 3rem;
+    padding-bottom: 0.5rem;
+    letter-spacing: 0.3rem;
+    color: white;
+    cursor: default;
+}
+
+.page h1:hover {
+    transform: translate3d(0, -10px, 22px);
+    color: #e71e07;
+    transition: all 0.3s ease;
+}
+
+
+#intro-page h1,
+#header-shim {
+    font-size: 8rem;
+}
+
+href {
+    color: white;
+}
+
+#header-shim {
+    color: white;
+    position: absolute;
+    margin-top: -37px;
+}
+
+.loader {
+    font-size: 2rem;
+}
+
+p {
+    text-align: left;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+a:link {
+    color: white;
+}
+
+p.lead:hover:not(.active){
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 6rem;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.1);
+    background: #fcd000;
+    z-index: 10;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.nav-container--top-first {
+    position: fixed;
+    top: 4rem;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.nav-container--top-second {
+    position: fixed;
+    top: 0;
+}
+
+.nav-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #fff;
+    letter-spacing: 0.1rem;
+    transition: all 0.5s ease;
+    font-size: 2rem;
+}
+
+.nav-tab:hover {
+    color: #00ffff;
+    background: #e71e07;
+    transition: all 0.5s ease;
+}
+
+.nav-tab-slider {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    background: #03dac6;
+    transition: left 0.3s ease;
+}
+
+.background {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: auto;
+}
+
+@media (min-width: 1200px) {
+    .page {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+    .column-text {
+        column-count: 2;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .nav-container {
+        height: 4rem;
+    }
+}
+
+
+/*
+@media only screen {
+  .nav h1,
+  .slider h1 {
+    font-size: 8vw;
+  }
+
+  .nav h2,
+  .slider h2 {
+    font-size: 2vw;
+    letter-spacing: 0.2vw;
+  }
+
+  .nav-tab {
+    font-size: 1.2vw;
+  }
+} */
+
+.background {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.loader span {
+    color: #009cda;
+    text-shadow: 0 0 0 #009cda;
+    animation: loading 1s ease-in-out infinite alternate;
+}
+
+@keyframes loading {
+    to {
+        text-shadow: 20px 0 70px #e71e07;
+        color: #e71e07;
+    }
+}
+
+.loader span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.loader span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.loader span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.loader span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.loader span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.loader span:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+.loader span:nth-child(8) {
+    animation-delay: 0.7s;
+}
+
+.loader span:nth-child(9) {
+    animation-delay: 0.8s;
+}
+
+.loader span:nth-child(10) {
+    animation-delay: 0.9s;
+}
+
+.loader span:nth-child(11) {
+    animation-delay: 1s;
+}
+
+.loader span:nth-child(12) {
+    animation-delay: 1.1s;
+}
+
+.loader span:nth-child(13) {
+    animation-delay: 1.2s;
+}
+
+.loader span:nth-child(14) {
+    animation-delay: 1.3s;
+}
+
+.loader span:nth-child(15) {
+    animation-delay: 1.4s;
+}
+
+.loader span:nth-child(16) {
+    animation-delay: 1.5s;
+}
+
+.loader span:nth-child(17) {
+    animation-delay: 1.6s;
+}
+
+.loader span:nth-child(18) {
+    animation-delay: 1.7s;
+}
+
+.loader span:nth-child(19) {
+    animation-delay: 1.8s;
+}
+
+.loader span:nth-child(20) {
+    animation-delay: 1.9s;
+}
+
+.loader span:nth-child(21) {
+    animation-delay: 2s;
+}
+
+.loader span:nth-child(22) {
+    animation-delay: 2.1s;
+}
+
+.mario ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: grid;
+	grid-template-columns: repeat(3, 220px);
+	justify-content: center;
+}
+.mario li {
+	grid-column: span 2;
+	text-align: center;
+	border-radius: 65px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 1.5em;
+	font-family: sans-serif;
+	position: relative;
+	padding: 20px;
+	border: 20px solid #0000;
+	background: linear-gradient(#e71e07 0 0) content-box,
+		linear-gradient(var(--c, #fcd000) 0 0) padding-box,
+		linear-gradient(var(--d, 90deg), #0000 75%, #42b132 0) border-box;
+}
+.mario li:nth-child(even) {
+	grid-column-end: -1;
+	--d: -90deg;
+	--c: #009cda;
+}
+.mario li:not(:last-child) {
+	margin-bottom: -20px;
+}
+.mario li:before,
+.mario li:after {
+	content: "";
+	display: block;
+	height: 0.6em;
+}
+
+.mario time {
+	position: absolute;
+	font-size: 0.65em;
+	left: calc(100% + 50px);
+	top: 50%;
+	transform: translateY(-50%);
+	white-space: nowrap;
+}
+.mario li:nth-child(even) time {
+	left: auto;
+	color: #000;
+	right: calc(100% + 50px);
+}
+.mario time:before {
+	content: "";
+	position: absolute;
+	height: 10px;
+	top: calc(50% - 5px);
+	right: calc(100% + 5px);
+	width: 65px;
+	background: repeating-linear-gradient(-90deg, #fcd000 0 5px, #0000 0 10px) 50%/100%
+		2px no-repeat;
+}
+.mario li:nth-child(even) time:before {
+	right: auto;
+	left: calc(100% + 5px);
+	background: repeating-linear-gradient(90deg, #009cda 0 5px, #0000 0 10px) 50%/100%
+		2px no-repeat;
+}
+
+.mario h1,
+.mario p {
+	display: none;
+}
+
+.mario {
+	background: 
+		radial-gradient(farthest-side at top right, #42b132 98%, #0000)
+			calc(50% - 10px) 0/20px 20px no-repeat,
+		radial-gradient(farthest-side at bottom right, #42b132 98%, #0000)
+			calc(50% - 10px) 100%/20px 20px no-repeat,
+		linear-gradient(90deg, #fcd000 50%, #009cda 0);
+}

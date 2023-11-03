@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<head>  
+  <meta charset="UTF-8">  
+  <title>DELTA AI</title>  
+
+  <!-- <script src="{% static 'HOME/particles.js-master/demo/js/app.js' %}" type="text/javascript"></script> -->
+  <script src='beha/particles.js' type="text/javascript"></script>
+  <script src='beha/jquery.js' type="text/javascript"></script>
+  <script src='beha/behavior.js' type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href='style/style.css'>
+</head>  
+
+<body>
+    <section class="nav">
+      <h1>DELTA AI</h1>
+      <h3 class="span loader">
+        <span class='m'>Δ</span>
+        <span class='m'>-</span>
+        <span class='m'>A</span>
+        <span class='m'>I</span>
+      </h3>
+      <div class="nav-container" id="nav-bar">
+        <a class="nav-tab" href="#tab-story">STORY</a>
+        <a class="nav-tab" href="#tab-concept">CONCEPT</a>
+        <a class="nav-tab" href="#tab-prices">PRICES</a>
+        <a class="nav-tab" href="#tab-contact">CONTACT</a>
+        <span class="nav-tab-slider"></span>
+      </div>
+    </section>
+  
+    <main class="main">
+      <section class="slider" id="tab-story">
+        <h1>STORY</h1>
+        <h2> My name is Gonçalo and I am a MSc student of Artificial Intelligence at Groningen university and I want to take what we know from AI as a scientific field and teach it to anyone that wants to improve their cognitive faculties. We can also dable in programming. </h2>
+      </section>
+      <section class="slider" id="tab-concept">
+        <h1>CONCEPT</h1>
+        <h2>Δ-AI will teach people how to think better in a world filled with mind traps (e.g. fake news, insidious marketing campaigns, addictive apps and games, etc).</h2>
+          <p>The information from the scientific field of AI can be used as a tool to teach students about learning and thinking in general: simultaneously introducing how the brain works and how to think better.</p>
+          <p>Firstly, AI is a good candidate for a new empirical epistomology (the philosophical study of knowledge, truth, belief, reason, evidence and reliability) that enables a science based metaphysics (the philosophical inquiry of abstract concepts such as being, knowing, identity, time, and space).</p>
+          <p>These can be made into a novel educational package that should supplement 'normal' education or exist in parallel to it: the trifecta-AI approach, or Δ-AI.</p>
+          <p>This novel educational framework is then designed considering well established cognitive facts, learning-theory and Artificial Intelligence. The latter serves as a pivot point for teaching higher-order thinking in such a manner that scientific analysis and problem solving techniques should become second nature to students.</p>
+          <p>The field of AI itself aims at finding solutions to problems, where mathematical generalisability is desirable and optimisation and efficiency are valued highly. It studies intelligence and knoweldge in a very general sense. The underlying theory of the field is invaluable to any human that wants to learn anything.</p>
+          <p>As an educational architecture, Δ-AI reverts back to basics. Teaching foundational precursors to thinking (not just thinking, but thinking better). Before anyone is taught anything they should be taught what it means to learn, how the brain learns and what are the optimal learning strategies - this is the virtue behind Δ-AI: knowing how things can be known. This means subjects like Computational Theory, Logic, Mathematics and Programming are intentionally emphasised in the material. An applied flavour of these fields is taught explicitly as a tool to tackle real life problems.</p> <p>Finally, by explicitly teaching student's how their own brains work, a scientific inclination capable of nudging thought is achieved. This is also possible through incentivising critical thinking (i.e. the analysis of available facts, evidence, observations, and arguments to form a reasonable judgment).</p>
+          <h3> There are three problems that this framework is supposed to tackle explicitly: </h3>
+
+      </section>
+      <section class="slider" id="tab-prices">
+        <h1>PRICES</h1>
+        <h2>The price of 35 eu is the standard hourly rate - packages or student batches can be arranged.</h2>
+      </section>
+      <section class="slider" id="tab-contact">
+        <h1>CONTACT</h1>
+        <h2>goncalo.horacarvalho@gmail.com</h2>
+        <h2>+351913989441</h2>
+      </section>
+    </main>
+    <canvas class="background"></canvas>
+  </body>
+</html>
